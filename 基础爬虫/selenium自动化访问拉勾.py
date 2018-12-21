@@ -27,7 +27,6 @@ def main(totPageNum):
         time.sleep(2)
     return
 
-EC.new_window_is_opened
 def write(page, inp):
     global wait, browser
     with open(r"C:\Users\jjff1\Desktop\xx.txt", "a", encoding="utf-8") as f:
