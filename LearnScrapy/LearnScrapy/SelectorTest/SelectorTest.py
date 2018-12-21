@@ -8,16 +8,16 @@ with open('forTest.html', encoding='utf-8') as f:
     text = f.read()
 
 sel = Selector(text = text)
-pqSel = PyQuery(text)
+pqSel = PyQuery(text)  # PyQuery继承自list
 
 # scrapy自带的css选择器和xpath选择器，每次选择返回的都是选择器列表，要从列表中取
 
 #---------------------------------------------------------------
 # 用css选择器, 主要由按照class获取，按id获取(唯一性)，按标签获取，通配符*
 cssResult = []
-cssResult.append(sel.css(".top").css("div>div").extract()[0])
+cssResult.append(sel.css(".top").css("div>div::text").extract()[0])  # ::text 脱壳取文本，::attr(href) 取href属性
 # cssResult.append(sel.css(".top>div>div").extract()[0])  如果中间没啥别的处理，可以把多个query合起来写
-cssResult.append(sel.css("#li_a_div").extract_first())
+cssResult.append(sel.css("#li_a_div::text").extract_first())
 print("css选择器得到的对象是SelectorList对象，SelectorList是list的子类吗？", issubclass(sel.css(".top").css("div>div").__class__, list), end='\n\n')  # 输出True
 
 #---------------------------------------------------------------
@@ -41,10 +41,10 @@ print("打印item下的文本内容：", list(map(lambda x:x.text(), item.items(
 print("{}\n{}\n{}".format(cssResult,xpathResult,pyqueryResult))
 '''
 输出结果
-['<div>li的div的div</div>', '<div id="li_a_div">li的a的div</div>']
+['li的div的div', 'li的a的div']
 ['li的div的div', 'li的a的div']
 ['li的div的div', 'li的a的div']
 
-可见，css选择器脱壳不干净，得到的字符串还得再处理掉标签。xpath选择器适用于结构清晰的页面，但也要脱壳。每一步得到的是SelectorList对象，是list的子类，可以按列表的方法取、切片等。
-pyquery选择器类似css选择器，无须脱壳。取属性还是取文本都方便。每一步得到的是新的PyQuery对象。包含多个子节点时先用items()方法取生成器。
+可见，css选择器需要手动脱壳来处理掉标签。xpath选择器适用于结构清晰的页面，但也要脱壳。每一步得到的是SelectorList对象，是list的子类，可以按列表的方法取、切片等。
+pyquery选择器类似css选择器，attr()取属性，text()取文本方便。每一步得到的是新的PyQuery对象。包含多个子节点时先用items()方法取生成器。
 '''
