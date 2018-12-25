@@ -5,6 +5,7 @@ from ProxyPool.tester import Tester
 from ProxyPool.db import RedisClient
 from ProxyPool.crawler import Crawler
 from ProxyPool.setting import *
+from ProxyPool.log import logger
 import sys
 
 '''
@@ -19,7 +20,7 @@ class Getter():
     
     def is_over_threshold(self):
         """
-        判断是否达到了代理池限制
+        Compare to the capacity of proxy pool.
         """
         if self.redis.count() >= POOL_UPPER_THRESHOLD:
             return True
@@ -27,7 +28,7 @@ class Getter():
             return False
     
     def run(self):
-        print('获取器开始执行')
+        logger.debug('Getter is running.')
         if not self.is_over_threshold():
             for callback_label in range(self.crawler.__CrawlFuncCount__):
                 callback = self.crawler.__CrawlFunc__[callback_label]

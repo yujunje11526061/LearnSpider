@@ -11,12 +11,12 @@ conn = RedisClient()
 
 def set(proxy):
     result = conn.add(proxy)
-    print(proxy)
-    print("Adding proxy "+'succeeded.' if result else 'failed.')
+    logger.info(proxy)
+    logger.info("Adding proxy "+'succeeded.' if result else 'failed.')
 
 
 def scan():
-    print('Please input the proxy, or input "exit" to exit')
+    logger.info('Please input the proxy, or input "exit" to exit')
     while True:
         proxy = input()
         if proxy == 'exit':

@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba9b04d-653e-4931-bc20-f4fedb8c9b84" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ProxyPool/log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPool/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPool/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPool/getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/getter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPool/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/importer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPool/scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/scheduler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPool/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/tester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPool/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +22,11 @@
     <SUITE FILE_PATH="coverage/LearnSpider$mitmScriptOne.coverage" NAME="mitmScriptOne Coverage Results" MODIFIED="1545726943930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础爬虫" />
     <SUITE FILE_PATH="coverage/LearnSpider$SelectorTest.coverage" NAME="SelectorTest Coverage Results" MODIFIED="1544707244210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnScrapy/LearnScrapy/SelectorTest" />
     <SUITE FILE_PATH="coverage/LearnSpider$selenium.coverage" NAME="selenium自动化访问拉勾 Coverage Results" MODIFIED="1545120877279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础爬虫" />
-    <SUITE FILE_PATH="coverage/LearnSpider$db.coverage" NAME="db Coverage Results" MODIFIED="1545743597984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProxyPool" />
+    <SUITE FILE_PATH="coverage/LearnSpider$db.coverage" NAME="db Coverage Results" MODIFIED="1545752895260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProxyPool" />
     <SUITE FILE_PATH="coverage/LearnSpider$Selenium_.coverage" NAME="Selenium 模拟登陆 Coverage Results" MODIFIED="1545383741718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础爬虫" />
     <SUITE FILE_PATH="coverage/LearnSpider$mitmproxy.coverage" NAME="mitmproxy重定向及抓包试验 Coverage Results" MODIFIED="1545726955467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础爬虫" />
     <SUITE FILE_PATH="coverage/LearnSpider$xpath.coverage" NAME="xpath解析深圳短租房 Coverage Results" MODIFIED="1541513242697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础爬虫" />
-    <SUITE FILE_PATH="coverage/LearnSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1545735792454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProxyPool" />
+    <SUITE FILE_PATH="coverage/LearnSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1545753420401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProxyPool" />
     <SUITE FILE_PATH="coverage/LearnSpider$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1545730994095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProxyPool" />
     <SUITE FILE_PATH="coverage/LearnSpider$.coverage" NAME="模拟登陆浙大邮箱 Coverage Results" MODIFIED="1545660078277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础爬虫" />
   </component>
@@ -26,7 +34,7 @@
     <session id="-1262837590">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="1" />
@@ -34,8 +42,8 @@
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -43,17 +51,19 @@
           <entry key="cfg" value="2" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="6" />
+          <entry key="log" value="7" />
           <entry key="md" value="1" />
-          <entry key="py" value="130" />
+          <entry key="py" value="136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="6" />
           <entry key="Ini" value="2" />
+          <entry key="Log" value="6" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="130" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -62,15 +72,15 @@
           <entry key="dummy" value="26" />
           <entry key="gitignore" value="13" />
           <entry key="html" value="3" />
-          <entry key="py" value="8390" />
-          <entry key="txt" value="161" />
+          <entry key="py" value="11098" />
+          <entry key="txt" value="220" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="3" />
-          <entry key="PLAIN_TEXT" value="200" />
-          <entry key="Python" value="11330" />
+          <entry key="PLAIN_TEXT" value="259" />
+          <entry key="Python" value="14038" />
         </counts>
       </usages-collector>
     </session>
@@ -87,37 +97,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProxyPool/getProxies.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="-109">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProxyPool/tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="-200">
+              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="32" />
+              <folding>
+                <element signature="e#46#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProxyPool/setting.py">
+        <entry file="file://$PROJECT_DIR$/ProxyPool/log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-373">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/基础爬虫/mitmproxy重定向及抓包试验.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/基础爬虫/mitmScriptOne.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="300">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -125,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProxyPool/db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="207">
+              <caret line="75" column="11" lean-forward="true" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
               <folding>
                 <element signature="e#46#58#0" expanded="true" />
               </folding>
@@ -135,10 +139,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProxyPool/getter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+              <folding>
+                <element signature="e#46#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProxyPool/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="47" selection-start-line="47" selection-end-line="48" />
+            <state relative-caret-position="187">
+              <caret line="149" column="69" lean-forward="true" selection-start-line="149" selection-start-column="69" selection-end-line="149" selection-end-column="69" />
+              <folding>
+                <element signature="e#46#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,8 +165,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProxyPool/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-193">
-              <caret selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="280">
+              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <folding>
+                <element signature="e#46#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,8 +177,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProxyPool/scheduler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="467">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="e#46#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,8 +189,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProxyPool/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="467">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -184,11 +209,16 @@
     <findStrings>
       <find>proxypool</find>
       <find>SCORE</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>ProxyPool</replace>
       <replace>WEIGHT</replace>
+      <replace>logger.info</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\CS\LearnSpider\ProxyPool</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -196,6 +226,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/LearnScrapy/LearnScrapy/items.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/LearnScrapy/LearnScrapy/settings.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ProxyPool/tester.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/LearnScrapy/LearnScrapy/middlewares.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/ProxyPool/getter.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/基础爬虫/mitmScriptOne.py" root0="SKIP_INSPECTION" />
@@ -203,6 +234,7 @@
     <setting file="file://$PROJECT_DIR$/基础爬虫/豆瓣书评爬取.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/ProxyPool/crawler.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/ProxyPool/utils.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ProxyPool/log.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/ProxyPool/main.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/基础爬虫/selenium自动化访问拉勾.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Tutorial/1-1什么是爬虫？.html" root0="SKIP_INSPECTION" />
@@ -212,6 +244,7 @@
     <setting file="file://$PROJECT_DIR$/LearnScrapy/LearnScrapy/spiders/spider_city_58.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/LearnScrapy/LearnScrapy/main.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/基础爬虫/知乎数据爬取.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ProxyPool/scheduler.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/LearnScrapy/LearnScrapy/SelectorTest/SelectorTest.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/LearnScrapy/LearnScrapy/SelectorTest/forTest.html" root0="SKIP_INSPECTION" />
   </component>
@@ -236,18 +269,20 @@
         <option value="$PROJECT_DIR$/基础爬虫/Selenium 模拟登陆.py" />
         <option value="$PROJECT_DIR$/基础爬虫/mitmproxy重定向及抓包试验.py" />
         <option value="$PROJECT_DIR$/ProxyPool/api.py" />
-        <option value="$PROJECT_DIR$/ProxyPool/scheduler.py" />
-        <option value="$PROJECT_DIR$/ProxyPool/crawler.py" />
         <option value="$PROJECT_DIR$/ProxyPool/importer.py" />
-        <option value="$PROJECT_DIR$/ProxyPool/getter.py" />
-        <option value="$PROJECT_DIR$/ProxyPool/utils.py" />
         <option value="$PROJECT_DIR$/ProxyPool/setting.py" />
         <option value="$PROJECT_DIR$/ProxyPool/flaskapi.py" />
         <option value="$PROJECT_DIR$/ProxyPool/main.py" />
         <option value="$PROJECT_DIR$/ProxyPool/error.py" />
-        <option value="$PROJECT_DIR$/ProxyPool/db.py" />
-        <option value="$PROJECT_DIR$/ProxyPool/tester.py" />
         <option value="$PROJECT_DIR$/基础爬虫/mitmScriptOne.py" />
+        <option value="$PROJECT_DIR$/基础爬虫/log.py" />
+        <option value="$PROJECT_DIR$/ProxyPool/log.py" />
+        <option value="$PROJECT_DIR$/ProxyPool/tester.py" />
+        <option value="$PROJECT_DIR$/ProxyPool/getter.py" />
+        <option value="$PROJECT_DIR$/ProxyPool/crawler.py" />
+        <option value="$PROJECT_DIR$/ProxyPool/scheduler.py" />
+        <option value="$PROJECT_DIR$/ProxyPool/db.py" />
+        <option value="$PROJECT_DIR$/ProxyPool/utils.py" />
       </list>
     </option>
   </component>
@@ -260,7 +295,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
     <option name="y" value="70" />
-    <option name="width" value="1578" />
+    <option name="width" value="1579" />
     <option name="height" value="1230" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -324,7 +359,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProxyPool" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -349,7 +384,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.db">
+  <component name="RunManager" selected="Python.main">
     <configuration name="模拟登陆浙大邮箱" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LearnSpider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -505,6 +540,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.模拟登陆浙大邮箱" />
       <item itemvalue="Python.mitmproxy重定向及抓包试验" />
       <item itemvalue="Python.mitmScriptOne" />
       <item itemvalue="Python.db" />
@@ -513,8 +549,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.db" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.db" />
         <item itemvalue="Python.crawler" />
         <item itemvalue="Python.mitmproxy重定向及抓包试验" />
         <item itemvalue="Python.mitmScriptOne" />
@@ -567,17 +603,32 @@
       <option name="project" value="LOCAL" />
       <updated>1545398951205</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="mitmdump + python 试验">
+      <created>1545744068770</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545744068770</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Proxy pool version 1.0">
+      <created>1545744130944</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545744130944</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17664671" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17814371" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35850957" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.9178794" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -663,7 +714,9 @@
     <MESSAGE value="add note" />
     <MESSAGE value="selenium test for lagou" />
     <MESSAGE value="login for ZJU mailbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="login for ZJU mailbox" />
+    <MESSAGE value="mitmdump + python 试验" />
+    <MESSAGE value="Proxy pool version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proxy pool version 1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -738,26 +791,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Professional Software/Python37/Lib/site-packages/scrapy/cmdline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="148" column="33" lean-forward="true" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Professional Software/Python37/Lib/site-packages/scrapy/signals.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LearnScrapy/LearnScrapy/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/Professional Software/Python37/Lib/site-packages/scrapy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Professional Software/Python37/Lib/site-packages/scrapy_deltafetch/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -943,9 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="823">
           <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#45#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -953,9 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#45#75#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -963,9 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
           <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
-          <folding>
-            <element signature="e#45#75#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -993,45 +1017,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/getter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/scheduler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="47" selection-start-line="47" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Professional Software/Python37/Lib/site-packages/redis/_compat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -1049,37 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="e#46#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/tester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/基础爬虫/mitmScriptOne.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1091,6 +1049,110 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础爬虫/log.py" />
+    <entry file="file://D:/Professional Software/Python37/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="1346" column="54" selection-start-line="1346" selection-start-column="44" selection-end-line="1346" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="75" column="11" lean-forward="true" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+          <folding>
+            <element signature="e#46#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/scheduler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#46#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/tester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#46#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding>
+            <element signature="e#46#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="e#46#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/getProxies.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-109">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="149" column="69" lean-forward="true" selection-start-line="149" selection-start-column="69" selection-end-line="149" selection-end-column="69" />
+          <folding>
+            <element signature="e#46#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

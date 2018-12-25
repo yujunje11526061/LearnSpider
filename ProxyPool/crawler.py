@@ -5,6 +5,7 @@ import json
 import re
 from ProxyPool.utils import get_page
 from pyquery import PyQuery as pq
+from ProxyPool.log import logger
 
 '''
 Define a crawler for acquiring proxies
@@ -34,26 +35,26 @@ class ProxyMetaclass(type):
 class Crawler(object, metaclass=ProxyMetaclass):
     def get_proxies(self, callback):
         '''
-        作为调用各个爬取方法的统一接口。
-        :param callback:
-        :return:
+        A public interfere for calling a crawling method.
+        :param callback: the name of crawling method
+        :return: a list of proxies
         '''
         proxies = []
         for proxy in eval("self.{}()".format(callback)):
-            print('成功获取到代理', proxy)
+            logger.debug('Collected proxy {}'.format(proxy))
             proxies.append(proxy)
         return proxies
        
     def crawl_daili66(self, page_count=4):
         """
-        获取代理66
-        :param page_count: 页码
-        :return: 代理
+        Collect proxies in 66
+        :param page_count
+        :return: yiedl proxy
         """
         start_url = 'http://www.66ip.cn/{}.html'
         urls = [start_url.format(page) for page in range(1, page_count + 1)]
         for url in urls:
-            print('Crawling', url)
+            # logger.debug('Crawling', url)
             html = get_page(url)
             if html:
                 doc = pq(html)
@@ -165,5 +166,5 @@ class Crawler(object, metaclass=ProxyMetaclass):
 
 if __name__=='__main__':
     cr = Crawler()
-    print(cr.__dict__)
-    print(Crawler.__dict__)
+    logger.debug(cr.__dict__)
+    logger.debug(Crawler.__dict__)

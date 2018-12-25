@@ -3,6 +3,7 @@
 
 import requests
 from requests.exceptions import ConnectionError
+from ProxyPool.log import logger
 
 '''
 A basical function for getting webpage of agency.
@@ -17,18 +18,17 @@ base_headers = {
 
 def get_page(url, options={}):
     """
-    抓取代理
     :param url:
     :param additional entries of headers:
     :return:
     """
     headers = dict(base_headers, **options)
-    print('正在抓取', url)
+    logger.debug('Crawling: {}'.format(url))
     try:
         response = requests.get(url, headers=headers)
-        print('抓取成功', url, response.status_code)
+        logger.info('Finished crawling {}, status_code is {}'.format(url, response.status_code))
         if response.status_code == 200:
             return response.text
-    except ConnectionError:
-        print('抓取失败', url)
+    except ConnectionError as e:
+        logger.warning('Failed to crawl {} because of {}'.format(url, repr(e)))
         return None
