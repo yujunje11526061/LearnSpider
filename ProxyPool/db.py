@@ -66,9 +66,8 @@ class RedisClient(object):
 
     def exists(self, proxy):
         """
-        判断是否存在
-        :param proxy: 代理
-        :return: 是否存在
+        :param proxy
+        :return: bool
         """
         return not self.db.zscore(REDIS_KEY, proxy) == None
 

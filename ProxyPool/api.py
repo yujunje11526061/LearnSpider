@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 from flask import Flask, g
-
+from ProxyPool.setting import *
 from ProxyPool.db import RedisClient
 
 # 可暴露接口的白名单
@@ -43,4 +43,4 @@ def get_counts():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(API_HOST, API_PORT, debug=True)
