@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba9b04d-653e-4931-bc20-f4fedb8c9b84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProxyPool/log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProxyPool/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProxyPool/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProxyPool/getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/getter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProxyPool/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/importer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProxyPool/scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/scheduler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProxyPool/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/tester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProxyPool/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProxyPool/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +46,7 @@
           <entry key="html" value="6" />
           <entry key="log" value="7" />
           <entry key="md" value="1" />
-          <entry key="py" value="136" />
+          <entry key="py" value="137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -63,7 +56,7 @@
           <entry key="Log" value="6" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="136" />
+          <entry key="Python" value="137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -72,15 +65,15 @@
           <entry key="dummy" value="26" />
           <entry key="gitignore" value="13" />
           <entry key="html" value="3" />
-          <entry key="py" value="11098" />
-          <entry key="txt" value="220" />
+          <entry key="py" value="11119" />
+          <entry key="txt" value="294" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="3" />
-          <entry key="PLAIN_TEXT" value="259" />
-          <entry key="Python" value="14038" />
+          <entry key="PLAIN_TEXT" value="333" />
+          <entry key="Python" value="14059" />
         </counts>
       </usages-collector>
     </session>
@@ -118,15 +111,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProxyPool/log.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProxyPool/db.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
@@ -150,14 +134,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProxyPool/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="149" column="69" lean-forward="true" selection-start-line="149" selection-start-column="69" selection-end-line="149" selection-end-column="69" />
+            <state relative-caret-position="1820">
+              <caret line="169" column="34" lean-forward="true" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
               <folding>
                 <element signature="e#46#57#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProxyPool/importer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -269,7 +262,6 @@
         <option value="$PROJECT_DIR$/基础爬虫/Selenium 模拟登陆.py" />
         <option value="$PROJECT_DIR$/基础爬虫/mitmproxy重定向及抓包试验.py" />
         <option value="$PROJECT_DIR$/ProxyPool/api.py" />
-        <option value="$PROJECT_DIR$/ProxyPool/importer.py" />
         <option value="$PROJECT_DIR$/ProxyPool/setting.py" />
         <option value="$PROJECT_DIR$/ProxyPool/flaskapi.py" />
         <option value="$PROJECT_DIR$/ProxyPool/main.py" />
@@ -283,6 +275,7 @@
         <option value="$PROJECT_DIR$/ProxyPool/scheduler.py" />
         <option value="$PROJECT_DIR$/ProxyPool/db.py" />
         <option value="$PROJECT_DIR$/ProxyPool/utils.py" />
+        <option value="$PROJECT_DIR$/ProxyPool/importer.py" />
       </list>
     </option>
   </component>
@@ -293,8 +286,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="y" value="70" />
+    <option name="x" value="-1648" />
+    <option name="y" value="62" />
     <option name="width" value="1579" />
     <option name="height" value="1230" />
   </component>
@@ -617,19 +610,26 @@
       <option name="project" value="LOCAL" />
       <updated>1545744130944</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Proxy pool version 1.1&#10;1. Use English notation.&#10;2. Add log module to.">
+      <created>1545753738224</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545753738224</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <frame x="-1927" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17814371" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23927614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35850957" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35850957" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.9178794" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -716,7 +716,8 @@
     <MESSAGE value="login for ZJU mailbox" />
     <MESSAGE value="mitmdump + python 试验" />
     <MESSAGE value="Proxy pool version 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proxy pool version 1.0" />
+    <MESSAGE value="Proxy pool version 1.1&#10;1. Use English notation.&#10;2. Add log module to." />
+    <option name="LAST_COMMIT_MESSAGE" value="Proxy pool version 1.1&#10;1. Use English notation.&#10;2. Add log module to." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1000,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProxyPool/importer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProxyPool/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1148,11 +1142,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProxyPool/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="149" column="69" lean-forward="true" selection-start-line="149" selection-start-column="69" selection-end-line="149" selection-end-column="69" />
+        <state relative-caret-position="1820">
+          <caret line="169" column="34" lean-forward="true" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
           <folding>
             <element signature="e#46#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProxyPool/importer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
         </state>
       </provider>
     </entry>
