@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-from scrapy import Selector
+from scrapy import Selector, crawler
 from pyquery import PyQuery
+from scrapy.http import Request, Response
 
 with open('forTest.html', encoding='utf-8') as f:
     text = f.read()
@@ -11,6 +12,8 @@ sel = Selector(text = text)
 pqSel = PyQuery(text)  # PyQuery继承自list
 
 # scrapy自带的css选择器和xpath选择器，每次选择返回的都是选择器列表，要从列表中取
+# scrapy产生的response对象自带css方法和xpath方法，可以方便地直接进行解析。
+# Response类和Resquest类提供了很多内置属性及方法，源码在scrapy.http目录下
 
 #---------------------------------------------------------------
 # 用css选择器, 主要由按照class获取，按id获取(唯一性)，按标签获取，通配符*
