@@ -16,6 +16,7 @@ class LearnscrapyItem(scrapy.Item):
     pass
 
 class XiaoquItem(scrapy.Item):
+    COL = 'XiaoquInfo'
     zone = Field()
     name = Field()
     year = Field()
@@ -27,6 +28,7 @@ class XiaoquItem(scrapy.Item):
     rentingNumber = Field()
 
 class SellingItem(scrapy.Item):
+    COL = 'SellingInfo'
     zone = Field()
     xiaoqu = Field()
     totPrice = Field()
@@ -36,6 +38,7 @@ class SellingItem(scrapy.Item):
 
 
 class RentingItem(scrapy.Item):
+    COL = 'rentingInfo'
     zone = Field()
     xiaoqu = Field()
     pricePerMonth = Field()

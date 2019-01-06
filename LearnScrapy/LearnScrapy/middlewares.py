@@ -11,7 +11,7 @@ from scrapy_deltafetch import DeltaFetch
 from ProxyPool.utils import get_proxy
 # from scrapy.contrib.downloadermiddleware.retry import RetryMiddleware
 # from scrapy.contrib.downloadermiddleware.downloadtimeout import DownloadTimeoutMiddleware
-from scrapy.contrib.downloadermiddleware.redirect import RedirectMiddleware
+# from scrapy.contrib.downloadermiddleware.redirect import RedirectMiddleware
 
 
 '''

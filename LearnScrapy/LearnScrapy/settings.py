@@ -46,18 +46,18 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-# SPIDER_MIDDLEWARES = {
-    # 'scrapy_deltafetch.DeltaFetch': 100,
-# }
+SPIDER_MIDDLEWARES = {
+    'scrapy_deltafetch.DeltaFetch': 100, # 利用DeltaFetch中间件来实现URL去重。
+}
 
-# DELTAFETCH_ENABLED = True
-# DELTAFETCH_DIR = "D:\DB\Berkeley DB\dbpath\LearnscrapyDirectory"
-# DELTAFETCH_RESET = 1
+DELTAFETCH_ENABLED = True
+DELTAFETCH_DIR = "D:\DB\Berkeley DB\dbpath\LearnscrapyDirectory"
+DELTAFETCH_RESET = False
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'LearnScrapy.middlewares.ProxyMiddleware': 800
+   # 'LearnScrapy.middlewares.ProxyMiddleware': 800
 }
 
 RETRY_ENABLED = True
@@ -76,7 +76,7 @@ REDIRECT_ENABLED = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   # 'LearnScrapy.pipelines.LearnscrapyPipeline': 300,
+   'LearnScrapy.pipelines.City58_Pipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -99,3 +99,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+DB_HOST = 'localhost'
+DB_PORT = 27017
+MONGO_DB = 'city_58'
