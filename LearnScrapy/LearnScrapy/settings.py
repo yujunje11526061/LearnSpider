@@ -46,13 +46,13 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-    'scrapy_deltafetch.DeltaFetch': 100, # 利用DeltaFetch中间件来实现URL去重。
-}
-
-DELTAFETCH_ENABLED = True
-DELTAFETCH_DIR = "D:\DB\Berkeley DB\dbpath\LearnscrapyDirectory"
-DELTAFETCH_RESET = False
+# SPIDER_MIDDLEWARES = {
+#     'scrapy_deltafetch.DeltaFetch': 100, # 利用DeltaFetch中间件来实现URL去重。
+# }
+#
+# DELTAFETCH_ENABLED = True
+# DELTAFETCH_DIR = "D:\DB\Berkeley DB\dbpath\LearnscrapyDirectory"
+# DELTAFETCH_RESET = False
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
@@ -103,3 +103,12 @@ ITEM_PIPELINES = {
 DB_HOST = 'localhost'
 DB_PORT = 27017
 MONGO_DB = 'city_58'
+
+SCHEDULER = "scrapy_redis.scheduler.Scheduler"   #必有项：更改为用scrapy_redis的调度器
+
+# Ensure all spiders share same duplicates filter through redis.
+DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"   #必有项：利用Redis去重
+
+#SCHEDULER_PERSIST = True   #故障重跑
+REDIS_URL = 'redis://localhost:6379'   #配置连接
+#REDIS_START_URLS_AS_SET = False   #设置set格式（不允许重复的元素）
