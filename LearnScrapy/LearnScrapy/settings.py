@@ -104,11 +104,19 @@ DB_HOST = 'localhost'
 DB_PORT = 27017
 MONGO_DB = 'city_58'
 
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"   #必有项：更改为用scrapy_redis的调度器
+# SCHEDULER = "scrapy_redis.scheduler.Scheduler"   #必有项：更改为用scrapy_redis的调度器
 
 # Ensure all spiders share same duplicates filter through redis.
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"   #必有项：利用Redis去重
+# DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"   #必有项：利用Redis去重
 
-#SCHEDULER_PERSIST = True   #故障重跑
+SCHEDULER_PERSIST = True   #故障重跑
 REDIS_URL = 'redis://localhost:6379'   #配置连接
 #REDIS_START_URLS_AS_SET = False   #设置set格式（不允许重复的元素）
+
+SCHEDULER = "scrapy_redis_bloomfilter.scheduler.Scheduler"   #必有项：更改为用scrapy_redis_bloomfilter的调度器
+# 去重类必须有，使用Bloom Filter需替换 DUPEFILTER_CLASS
+DUPEFILTER_CLASS ='scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter'
+# 散列函数的个数，默认为 6，可以自行修改
+BLOOMFILTER_HASH_NUMBER = 3
+# Bloom Filter的bit参数，默认30 ，占用 128MB 空间，去重量级 1 亿
+BLOOMFILTER_BIT = 15
