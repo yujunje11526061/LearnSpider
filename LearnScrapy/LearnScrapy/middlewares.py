@@ -8,30 +8,8 @@
 from scrapy import signals
 from scrapy.dupefilters import RFPDupeFilter  # scrapy 自带的用于url去重的蜘蛛中间件
 from scrapy_deltafetch import DeltaFetch
+from ProxyPool.utils import get_proxy
 
-# DOWNLOADER_MIDDLEWARES_BASE = {
-#     'scrapy.contrib.downloadermiddleware.robotstxt.RobotsTxtMiddleware': 100,
-#     'scrapy.contrib.downloadermiddleware.httpauth.HttpAuthMiddleware': 300,
-#     'scrapy.contrib.downloadermiddleware.downloadtimeout.DownloadTimeoutMiddleware': 350,
-#     'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': 400,
-#     'scrapy.contrib.downloadermiddleware.retry.RetryMiddleware': 500,
-#     'scrapy.contrib.downloadermiddleware.defaultheaders.DefaultHeadersMiddleware': 550,
-#     'scrapy.contrib.downloadermiddleware.redirect.MetaRefreshMiddleware': 580,
-#     'scrapy.contrib.downloadermiddleware.httpcompression.HttpCompressionMiddleware': 590,
-#     'scrapy.contrib.downloadermiddleware.redirect.RedirectMiddleware': 600,
-#     'scrapy.contrib.downloadermiddleware.cookies.CookiesMiddleware': 700,
-#     'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 750,
-#     'scrapy.contrib.downloadermiddleware.chunked.ChunkedTransferMiddleware': 830,
-#     'scrapy.contrib.downloadermiddleware.stats.DownloaderStats': 850,
-#     'scrapy.contrib.downloadermiddleware.httpcache.HttpCacheMiddleware': 900,
-# }
-# SPIDER_MIDDLEWARES_BASE = {
-#     'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware': 50,
-#     'scrapy.spidermiddlewares.offsite.OffsiteMiddleware': 500,
-#     'scrapy.spidermiddlewares.referer.RefererMiddleware': 700,
-#     'scrapy.spidermiddlewares.urllength.UrllengthMiddleware': 800,
-#     'scrapy.spidermiddlewares.depth.DepthMiddleware': 900,
-# }
 
 '''
 url去重
@@ -93,10 +71,9 @@ class LearnscrapySpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class LearnscrapyDownloaderMiddleware(object):
+class ProxyMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
-    # scrapy acts as if the downloader middleware does not modify the
-    # passed objects.
+    # scrapy acts as if the downloader middleware does not modify the passed objects.
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -115,6 +92,7 @@ class LearnscrapyDownloaderMiddleware(object):
         # - or return a Request object
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
+        request.meta['proxy'] = 'http://'+ get_proxy()
         return None
 
     def process_response(self, request, response, spider):

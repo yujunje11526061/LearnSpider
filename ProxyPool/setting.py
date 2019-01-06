@@ -10,7 +10,7 @@ REDIS_PORT = 6379
 # Redis密码，如无填None
 REDIS_PASSWORD = None
 
-REDIS_KEY = 'proxies'
+REDIS_KEY = 'proxies_city_58'
 
 # 代理分数
 MAX_SCORE = 100
@@ -28,7 +28,7 @@ TESTER_CYCLE = 20
 GETTER_CYCLE = 300
 
 # 测试API，建议抓哪个网站测哪个
-TEST_URL = 'http://www.baidu.com'
+TEST_URL = 'http://hz.58.com'
 
 # API配置
 API_HOST = '0.0.0.0'

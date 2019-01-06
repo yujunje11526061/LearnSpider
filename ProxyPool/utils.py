@@ -4,6 +4,7 @@
 import requests
 from requests.exceptions import ConnectionError
 from ProxyPool.log import logger
+from ProxyPool.db import RedisClient
 
 '''
 A basical function for getting webpage of agency.
@@ -32,3 +33,11 @@ def get_page(url, options={}):
     except ConnectionError as e:
         logger.warning('Failed to crawl {} because of {}'.format(url, repr(e)))
         return None
+
+def get_proxy():
+    cli = RedisClient()
+    return cli.random()
+
+if __name__ == '__main__':
+    proxy = get_proxy()
+    print(type(proxy),proxy)
