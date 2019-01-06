@@ -29,9 +29,14 @@ class XiaoquItem(scrapy.Item):
 class SellingItem(scrapy.Item):
     zone = Field()
     xiaoqu = Field()
-    pass
+    totPrice = Field()
+    price = Field()
+    area = Field()
+    description = Field()
+
 
 class RentingItem(scrapy.Item):
     zone = Field()
     xiaoqu = Field()
-    pass
+    pricePerMonth = Field()
+    description = Field()
