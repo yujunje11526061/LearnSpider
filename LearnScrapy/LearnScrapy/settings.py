@@ -46,20 +46,27 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-   'LearnScrapy.middlewares.ProxyMiddleware': 800,
+# SPIDER_MIDDLEWARES = {
     # 'scrapy_deltafetch.DeltaFetch': 100,
-}
+# }
+
 # DELTAFETCH_ENABLED = True
 # DELTAFETCH_DIR = "D:\DB\Berkeley DB\dbpath\LearnscrapyDirectory"
 # DELTAFETCH_RESET = 1
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'LearnScrapy.middlewares.LearnscrapyDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   'LearnScrapy.middlewares.ProxyMiddleware': 800
+}
 
+RETRY_ENABLED = True
+RETRY_HTTP_CODES = [302,401,408,501,502,503,504]
+RETRY_TIMES = 3
+
+DOWNLOAD_TIMEOUT = 10
+
+REDIRECT_ENABLED = False
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
@@ -68,9 +75,9 @@ SPIDER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'LearnScrapy.pipelines.LearnscrapyPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   # 'LearnScrapy.pipelines.LearnscrapyPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

@@ -9,6 +9,9 @@ from scrapy import signals
 from scrapy.dupefilters import RFPDupeFilter  # scrapy 自带的用于url去重的蜘蛛中间件
 from scrapy_deltafetch import DeltaFetch
 from ProxyPool.utils import get_proxy
+# from scrapy.contrib.downloadermiddleware.retry import RetryMiddleware
+# from scrapy.contrib.downloadermiddleware.downloadtimeout import DownloadTimeoutMiddleware
+from scrapy.contrib.downloadermiddleware.redirect import RedirectMiddleware
 
 
 '''
