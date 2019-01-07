@@ -5,19 +5,21 @@ from traceback import format_exc
 from scrapy import Selector
 from LearnScrapy.items import XiaoquItem, SellingItem, RentingItem
 from pyquery import PyQuery
+from scrapy_redis_bloomfilter.spiders import RedisSpider
 
 
-class SpiderCity58Spider(scrapy.Spider):
+class SpiderCity58Spider(RedisSpider): # 分布式实现时，更改继承类，方便统一启动。
     name = 'spider_city_58'
     allowed_domains = ['58.com']
-    # start_urls = ['http://58.com/']
     url = 'https://hz.58.com/xiaoqu/'
+    # start_urls = [url] 继承自scrapy_redis_bloomfilter.spiders.RedisSpider时该属性失效
     xiaoquPageNum = 2
     sellingPageNum = 2
     rentingPageNum = 2
 
-    def start_requests(self):
-        return [Request(self.url, callback=self.parse, errback=self.error_back, priority=10)]
+    # 通过实现该方法仍然可以使得分布式的各机器共享队列的情况下各自启动，重复的初始请求会被去重。
+    # def start_requests(self):
+    #     return [Request(self.url, callback=self.parse, errback=self.error_back, priority=10)]
 
     def parse(self, response):
         self.logger.debug('获取各行政区小区页面')
